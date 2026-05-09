@@ -1,0 +1,206 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+body{
+    height: 200vh;
+    background-image:linear-gradient(rgb(169, 169, 239),rgb(172, 120, 185),rgb(220, 135, 144),rgb(184, 171, 212),rgb(227, 148, 148));
+    text-align: center;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border:5px solid #303b74;
+    box-shadow: 0 0 1rem black;
+    font-size: 8vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(17, 17, 28);
+    background-color: #c0dae6;
+}
+#reset{
+    padding: 15px 40px;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    border: none;
+}
+#reset::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0b0b0b;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+#reset::before {
+    content:"";
+    background: linear-gradient(
+        45deg,
+        #FF0000,#FF7300,#FFFB00,#48FF00,
+        #00FFD5,#002BFF,#FF00C8,#FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity  0.3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+@keyframes glowing{
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+#reset:hover::before {
+    opacity: 1;
+}
+#reset:active::after {
+    background: transparent;
+}
+#reset:active {
+    color: #000;
+    font-weight: bold;
+}
+#newBtn{
+    padding: 15px 40px;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    border: none;
+}
+#newBtn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0b0b0b;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+#newBtn::before {
+    content:"";
+    background: linear-gradient(
+        45deg,
+        #FF0000,#FF7300,#FFFB00,#48FF00,
+        #00FFD5,#002BFF,#FF00C8,#FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity  0.3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+@keyframes glowing{
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+#newBtn:hover::before {
+    opacity: 1;
+}
+#newBtn:active::after {
+    background: transparent;
+}
+#newBtn:active {
+    color: #000;
+    font-weight: bold;
+}
+#msg{
+    color: #ad0606;
+    font-size: 5vmin;
+}
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hide {
+    display: none;
+}
+.box:hover {
+    background-color: rgba(11, 227, 155, 0.666);
+}
+/* Winner color */
+.winner-box {
+  background-color: #cc78cc !important; /* bright green */
+  color: #000 !important;
+  transition: 0.5s;
+}
+
+/* Optional glow effect */
+.winner-box.glow {
+  box-shadow: 0 0 25px #b969c3;
+}
+/* Winner GIF fade-in / fade-out animation */
+#img {
+  display: none; 
+  width: auto; /* adjust size if needed */
+  height: 250px;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+#img.show {
+  display: block;
+  opacity: 1;
+}
+#img1 {
+  display: none; 
+  width: auto; /* adjust size if needed */
+  height: 200px;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+#img1.show {
+  display: block;
+  opacity: 1;
+}

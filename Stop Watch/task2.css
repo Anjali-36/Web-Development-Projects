@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+     background-image: url('sw.jpg');
+  background-repeat: no-repeat;
+  background-size:1600px 800px;
+    color:rgb(194, 50, 168);
+}
+
+h1 {
+    margin: 10px 0 0 20px;
+    user-select: none;
+}
+
+
+.container {
+    background:rgb(54, 173, 177);
+    display:ruby-text-container;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    margin: 150px auto;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.time {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+.controls button {
+    background-color:rgb(23, 124, 62);
+    margin: 10px 5px;
+    padding: 10px 20px 10px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: transparent;
+    color: rgb(183, 19, 19);
+}
+
+@media(max-width:480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .container {
+        max-width: 200px;
+    }
+    .time {
+        font-size: 2rem;
+    }
+    .controls button {
+        padding: 7px;
+        margin: 0.5px;
+    }
+}
