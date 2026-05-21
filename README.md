@@ -1,7 +1,14 @@
-# Web-Development-Projects 🚀
+# Frontend Web Development Projects | HTML, CSS & JavaScript 🚀
 
-A collection of interactive web development projects built using **HTML, CSS, and JavaScript**.  
-This repository showcases frontend development skills including responsive design, DOM manipulation, event handling, and interactive UI development.
+A collection of interactive web development projects built using **HTML, CSS, and JavaScript**.
+
+This repository showcases practical frontend development skills including **responsive design, DOM manipulation, event handling, JavaScript logic building, and interactive UI development**.
+
+---
+
+## 🌐 Live Demo
+
+https://anjali-36.github.io/Web-Development-Projects/
 
 ---
 
@@ -41,12 +48,13 @@ A two-player Tic Tac Toe game built with JavaScript.
 ---
 
 ### 🌦️ Weather Report
-A weather application that displays weather information dynamically.
+A dynamic weather application that displays real-time weather information.
 
 **Features:**
 - Search weather by city
 - Dynamic weather updates
 - User-friendly interface
+- Responsive layout
 
 ---
 
@@ -73,37 +81,62 @@ Web-Development-Projects/
 
 ## 🎯 Purpose
 
-These projects were created to practice and strengthen core frontend development concepts such as:
+This repository demonstrates the practical implementation of core frontend development concepts through interactive mini-projects.
+
+It highlights:
 
 - DOM Manipulation
 - Event Handling
 - JavaScript Logic Building
 - Responsive Web Design
-- UI/UX Development
+- Interactive UI/UX Development
+- Problem Solving with JavaScript
 
 ---
 
 ## 🚀 How to Run
 
-1. Clone this repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/Anjali-36/Web-Development-Projects.git
 ```
 
-2. Open any project folder
+### Open project folder
 
-3. Run the `index.html` file in your browser
+Choose any project directory.
+
+### Run locally
+
+Open the `index.html` file in your browser.
+
+---
+
+## 📸 Screenshots
+
+_Add project screenshots here for better visual presentation._
+
+Examples:
+- Rock Paper Scissors UI
+- Stopwatch Interface
+- Tic Tac Toe Game
+- Weather App Dashboard
 
 ---
 
 ## 👩‍💻 Author
 
-**Anjali**  
-Computer Science Graduate | Frontend Developer | Python Enthusiast
+**Anjali Kumari**  
+Computer Science Graduate | Python Developer | Django Full-Stack Developer | Frontend Development Enthusiast
+
+GitHub: https://github.com/Anjali-36  
+Portfolio: https://anjali-36.github.io/anjali-portfolio/  
+LinkedIn: https://www.linkedin.com/in/anjalikumari2002
 
 ---
 
 ## ⭐ Support
 
-If you like these projects, consider giving this repository a **star ⭐**
+If you found these projects useful, consider giving this repository a **star ⭐**
+
+It helps support my work and encourages more development projects.
